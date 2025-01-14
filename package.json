@@ -2,7 +2,13 @@
   "name": "@saas-projects/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "reset": "npx nx reset",
+    "format": "npx prettier --write .",
+    "lint": "npx nx run-many --all --target=lint",
+    "lint:fix": "npx nx run-many --all --target=lint --fix",
+    "affected": "npx nx affected -t lint build"
+  },
   "private": true,
   "dependencies": {
     "@nx/remix": "20.3.1",
