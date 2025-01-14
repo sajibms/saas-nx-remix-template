@@ -7,7 +7,10 @@
     "format": "npx prettier --write .",
     "lint": "npx nx run-many --all --target=lint",
     "lint:fix": "npx nx run-many --all --target=lint --fix",
-    "affected": "npx nx affected -t lint build"
+    "affected": "npx nx affected -t lint build",
+    "dev": "npx nx run-many --all --target=dev --parallel=4",
+    "build": "npx nx run-many --all --target=build",
+    "serve": "npx nx run-many --all --target=serve"
   },
   "private": true,
   "dependencies": {
