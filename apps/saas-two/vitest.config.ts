@@ -7,7 +7,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/saas-one',
+  cacheDir: '../../node_modules/.vite/apps/saas-two',
   plugins: [react(), nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
   // Uncomment this if you are using workers.
   // worker: {
@@ -21,7 +21,7 @@ export default defineConfig({
     include: ['./tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     reporters: ['default'],
     coverage: {
-      reportsDirectory: '../../coverage/apps/saas-one',
+      reportsDirectory: '../../coverage/apps/saas-two',
       provider: 'v8',
     },
   },
