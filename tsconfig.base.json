@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@saas-projects/test": ["libs/test/src/index.ts"],
+      "@saas-projects/test/server": ["libs/test/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
