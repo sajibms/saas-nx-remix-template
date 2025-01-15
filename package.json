@@ -26,7 +26,11 @@
     "s3:dev": "npx nx dev saas-three",
     "s3:lint": "npx nx lint saas-three",
     "s3:test": "npx nx test saas-three",
-    "s3:build": "npx nx build saas-three"
+    "s3:build": "npx nx build saas-three",
+    "s4:dev": "npx nx dev saas-four",
+    "s4:lint": "npx nx lint saas-four",
+    "s4:test": "npx nx test saas-four",
+    "s4:build": "npx nx build saas-four"
   },
   "private": true,
   "dependencies": {
