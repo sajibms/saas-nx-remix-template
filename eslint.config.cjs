@@ -20,7 +20,7 @@ module.exports = [
         'error',
         {
           enforceBuildableLibDependency: true,
-          allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
+          allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$', '../../config/root.tailwind.config'],
           depConstraints: [
             {
               sourceTag: '*',
