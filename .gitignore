@@ -47,6 +47,6 @@ vitest.config.*.timestamp*
 
 # Environment and secrets
 .env
-.env.*
+.env.local
 *.pem
 *.key
