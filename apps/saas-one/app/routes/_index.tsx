@@ -1,9 +1,7 @@
-import NxWelcome from '../nx-welcome'
-
 export default function Index() {
   return (
     <div>
-      <NxWelcome title={'saas-one'} />
+      <h3 className="text-3xl font-bold underline">This is SAAS One</h3>
     </div>
   )
 }

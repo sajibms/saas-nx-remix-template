@@ -11,7 +11,8 @@
     "dev": "npx nx run-many --all --target=dev --parallel=4",
     "build": "npx nx run-many --all --target=build",
     "gen-remix": "npx nx generate @nx/remix:app",
-    "gen-remix-lib": "npx nx generate @nx/remix:lib"
+    "gen-remix-lib": "npx nx generate @nx/remix:lib",
+    "tailwind": "npx nx generate setup-tailwind ..."
   },
   "private": true,
   "dependencies": {
@@ -19,10 +20,13 @@
     "@remix-run/node": "^2.14.0",
     "@remix-run/react": "^2.14.0",
     "@remix-run/serve": "^2.14.0",
+    "autoprefixer": "^10.4.19",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "isbot": "^4.4.0",
+    "postcss": "^8.4.38",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "tailwindcss": "^3.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.5",

@@ -1,6 +1,8 @@
 import type { LinksFunction, MetaFunction } from '@remix-run/node'
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 
+import twStyles from './tailwind.css'
+
 export const meta: MetaFunction = () => [
   {
     title: 'New Remix App',
@@ -8,6 +10,8 @@ export const meta: MetaFunction = () => [
 ]
 
 export const links: LinksFunction = () => [
+  // @ts-expect-error Ignored on purpose
+  { rel: 'stylesheet', href: twStyles },
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
   {
     rel: 'preconnect',
