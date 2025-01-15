@@ -3,6 +3,8 @@ import { defineConfig } from 'vite'
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin'
 import { vitePlugin as remix } from '@remix-run/dev'
 
+import { configuration } from './config/config'
+
 declare module '@remix-run/node' {
   interface Future {
     v3_singleFetch: true
@@ -23,4 +25,7 @@ export default defineConfig({
     }),
     nxViteTsPaths(),
   ],
+  server: {
+    port: configuration.port,
+  },
 })
