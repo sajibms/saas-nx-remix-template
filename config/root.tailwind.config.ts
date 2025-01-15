@@ -5,7 +5,7 @@ const rootTailwindConfig = {
   theme: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/typography'), require('daisyui')]
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
 } satisfies Config
 
 export default rootTailwindConfig
