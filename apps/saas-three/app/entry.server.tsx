@@ -11,6 +11,9 @@ import { renderToPipeableStream } from 'react-dom/server'
 import type { AppLoadContext, EntryContext } from '@remix-run/node'
 import { createReadableStreamFromReadable } from '@remix-run/node'
 import { RemixServer } from '@remix-run/react'
+import { connectToMongoDB } from '@saas-projects/utils'
+
+import { configuration } from '../config/config'
 
 const ABORT_DELAY = 5_000
 
@@ -120,3 +123,5 @@ function handleBrowserRequest(
     setTimeout(abort, ABORT_DELAY)
   })
 }
+
+connectToMongoDB(configuration.port, configuration.db_url)
