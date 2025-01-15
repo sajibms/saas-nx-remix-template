@@ -6,6 +6,7 @@
     "reset": "npx nx reset",
     "format": "npx prettier --write .",
     "affected": "npx nx affected -t lint test build",
+    "affected:v": "npx nx affected -t lint test build --verbose",
     "lint": "npx nx run-many --all --target=lint",
     "lint:fix": "npm run format && npx nx run-many --all --target=lint --fix",
     "test": "npx nx run-many --all --target=test",
